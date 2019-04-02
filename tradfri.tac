@@ -1,3 +1,5 @@
+
+
 import argparse
 import colorsys
 import configparser
@@ -17,6 +19,7 @@ from twisted.conch.telnet import TelnetProtocol, TelnetTransport
 from twisted.internet import endpoints, protocol, reactor, task
 from twisted.internet.protocol import ServerFactory
 
+# Allow relative imports when running from twisted
 sys.path.append(os.path.dirname(os.path.realpath(__file__)))
 from devices import ikeaBatteryDevice, ikeaGroup, ikeaLight, ikeaSocket
 
